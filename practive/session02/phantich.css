@@ -1,0 +1,6 @@
+.comlumn__left{
+    flex: 0.5; color: blue; background-color: red;
+}
+.comlumn__right{
+    flex: 0.5; color: red; background-color: blue;
+}
