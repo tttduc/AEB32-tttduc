@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 500px;
+        border: 1px solid #333;
+        max-width: 500px;
+      }
+      .img img {
+        padding-bottom: 10px;
+      }
+      .div_row{
+        display: flex;
+        padding-left: 20px;
+        padding-bottom: 14px;
+        border-style: solid;
+        border: 1px solid white;
+        border-width: 14px;
+        border-bottom: 1px solid black;
+      }
+        .div_left {
+            flex: 0.8;
+            display: flex;
+        }
+        .div_right {
+            flex:0.1;   
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+            background-color:red;
+        }
+        .div_right1 {
+            flex:0.1;   
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+            background-color:lightblue;
+        }
+        .div_right2 {
+            flex:0.1;   
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+            background-color:greenyellow;
+        }
+        .div_right3 {
+            flex:0.1;   
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+            background-color:yellow;
+        }
+        .div_right4 {
+            flex:0.1;   
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+            background-color:plum;
+        }
+        .avt img{  
+        left:40px;
+        top: 180px;
+        position: absolute;
+        border-radius: 30px;
+    }
+    h2{
+        color: white;
+        left:130px;
+        top: 160px;
+        position: absolute;
+    }
+    h3{
+        color: white;
+        left: 130px;
+        top: 190px;
+        position: absolute;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">   
+        <div class="parrent">
+            <div class="img">
+                <img width="500" height="250" src="./jack.jpg" alt="" />
+            </div>
+            <div class="avt">
+                <h2>Huong Ga</h2>
+                <h3>Web design</h3>
+                <img border-radius="30px" height='60px' width="60p"src="./huongga.jpg" alt="" />
+            </div>
+            <div class="ROW">
+                <div class="div_row">
+            <div class="div_left">             
+                    FOLLOWERS  
+            </div>    
+            <div class="div_right">
+                1,200
+            </div>   
+        </div>
+        <div class="div_row">
+            <div class="div_left">             
+                    FOLLOWING  
+            </div>    
+            <div class="div_right1">
+                1,200
+            </div>   
+        </div>
+        <div class="div_row">
+            <div class="div_left">             
+                    MESSAGES   
+            </div>    
+            <div class="div_right2">
+                1,200
+            </div>   
+        </div>
+        <div class="div_row">
+            <div class="div_left">             
+                    LIKES  
+            </div>    
+            <div class="div_right3">
+                1,200
+            </div>   
+        </div>
+        <div class="div_row">
+            <div class="div_left">             
+                    COMMENTS  
+            </div>    
+            <div class="div_right4">
+                1,200
+            </div>   
+        </div>
+    </div>  
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        height: 300px;
+        width: 300px;
+      }
+      .div__up {
+        border-bottom: 1px solid black;
+        height: 150px;
+        width: 300px;
+        text-align: center;
+      }
+      .div__column {
+        table-layout: vertical;
+      }
+      .down__column1 {
+        table-layout: column;
+        tab-size: 40px;
+        border: 1px solid black;
+        table-layout: fixed;
+        width: 20px;
+        height: 60px;
+
+        margin-left: 40px;
+        background: blue;
+      }
+      .div__up p {
+        color: aqua;
+        font-size: 40px;
+      }
+      .name {
+        padding: 30px;
+      }
+      span{
+        padding-right: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div__up">
+        <div>
+          <h3>TODAY'S VISITORS</h3>
+          <p>24,599</p>
+        </div>
+      </div>
+      <div class="down">
+        <div class="column">
+          <div class="down__column1"></div>
+          <div class="down__column2"></div>
+          <div class="down__column3"></div>
+          <div class="down__column4"></div>
+          <div class="down__column5"></div>
+        </div>
+        <div class="name">
+          <span>MON</span>
+          <span>TUE</span>
+          <span>WED</span>
+          <span>THU</span>
+          <span>FRI</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
