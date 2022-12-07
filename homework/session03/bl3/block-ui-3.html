@@ -4,69 +4,227 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="/HTML/AEB32-tttduc/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
     <style>
-      .container {
-        border: 1px solid black;
-        height: 300px;
-        width: 300px;
+      .Table {
+        border: 1px solid #ccc;
       }
-      .div__up {
-        border-bottom: 1px solid black;
-        height: 150px;
-        width: 300px;
-        text-align: center;
-      }
-      .div__column {
-        table-layout: vertical;
-      }
-      .down__column1 {
-        table-layout: column;
-        tab-size: 40px;
-        border: 1px solid black;
-        table-layout: fixed;
-        width: 20px;
+      .columnup1 {
+        border: 1px solid #ccc;
         height: 60px;
-
-        margin-left: 40px;
-        background: blue;
+        width: 20px;
       }
-      .div__up p {
-        color: aqua;
-        font-size: 40px;
+      .columnup2 {
+        border: 1px solid #ccc;
+        height: 80px;
+        width: 20px;
       }
-      .name {
-        padding: 30px;
+      .columnup3 {
+        border: 1px solid #ccc;
+        height: 40px;
+        width: 20px;
       }
-      span{
-        padding-right: 12px;
+      .columnup4 {
+        border: 1px solid #ccc;
+        height: 20px;
+        width: 20px;
+      }
+      .columnup5 {
+        border: 1px solid #ccc;
+        height: 40px;
+        width: 20px;
+      }
+      .columndown1 {
+        background-color: red;
+        height: 40px;
+        width: 20px;
+      }
+      .columndown2 {
+        background-color: rgb(24, 144, 24);
+        height: 20px;
+        width: 20px;
+      }
+      .columndown3 {
+        background-color: rgb(183, 183, 28);
+        height: 60px;
+        width: 20px;
+      }
+      .columndown4 {
+        background-color: rgb(75, 150, 229);
+        height: 80px;
+        width: 20px;
+      }
+      .columndown5 {
+        background-color: rgb(241, 102, 15);
+        height: 60px;
+        width: 20px;
+      }
+      p {
+        font-size: 10px;
+        color: #ccc;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(51, 203, 250);
+        border-bottom: 1px solid #333;
+      }
+      h3 {
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="div__up">
-        <div>
-          <h3>TODAY'S VISITORS</h3>
-          <p>24,599</p>
+    <div class="row mt-5 m-5">
+      <div class="col-12 col-md-3 col-content">
+        <div class="Table">
+          <div class="headerr">
+            <h3>TODAY'S VISITORS</h3>
+            <h1>24,599</h1>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-1 col-content"></div>
+            <div class="col-12 col-md-2 col-content">
+              <div class="columnup1"></div>
+              <div class="columndown1"></div>
+              <p>MON</p>
+            </div>
+            <div class="col-12 col-md-2 col-content">
+              <div class="columnup2"></div>
+              <div class="columndown2"></div>
+              <p>TUE</p>
+            </div>
+            <div class="col-12 col-md-2 col-content">
+              <div class="columnup3"></div>
+              <div class="columndown3"></div>
+              <p>WED</p>
+            </div>
+            <div class="col-12 col-md-2 col-content">
+              <div class="columnup4"></div>
+              <div class="columndown4"></div>
+              <p>THU</p>
+            </div>
+            <div class="col-12 col-md-2 col-content">
+              <div class="columnup5"></div>
+              <div class="columndown5"></div>
+              <p>FRI</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="down">
-        <div class="column">
-          <div class="down__column1"></div>
-          <div class="down__column2"></div>
-          <div class="down__column3"></div>
-          <div class="down__column4"></div>
-          <div class="down__column5"></div>
+      <div class="col-12 col-md-3 col-content">
+        <div class="Table">
+          <div>
+            <h3>YESTERDAY'S VISITORS</h3>
+            <h1>15,699</h1>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-1 col-content"></div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup1"></div>
+              <div class="columndown1"></div>
+              <p>MON</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup2"></div>
+              <div class="columndown2"></div>
+              <p>TUE</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup3"></div>
+              <div class="columndown3"></div>
+              <p>WED</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup4"></div>
+              <div class="columndown4"></div>
+              <p>THU</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup5"></div>
+              <div class="columndown5"></div>
+              <p>FRI</p>
+            </div>
+          </div>
         </div>
-        <div class="name">
-          <span>MON</span>
-          <span>TUE</span>
-          <span>WED</span>
-          <span>THU</span>
-          <span>FRI</span>
+      </div>
+      <div class="col-12 col-md-3 col-content">
+        <div class="Table">
+          <div>
+            <h3>TOTAL DOWNLOADS</h3>
+            <h1>124,599</h1>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-1 col-content"></div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup1"></div>
+              <div class="columndown1"></div>
+              <p>MON</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup2"></div>
+              <div class="columndown2"></div>
+              <p>TUE</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup3"></div>
+              <div class="columndown3"></div>
+              <p>WED</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup4"></div>
+              <div class="columndown4"></div>
+              <p>THU</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup5"></div>
+              <div class="columndown5"></div>
+              <p>FRI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 col-content">
+        <div class="Table">
+          <div>
+            <h3>CURRENT INCOME</h3>
+            <h1>54,599</h1>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-1 col-content"></div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup1"></div>
+              <div class="columndown1"></div>
+              <p>MON</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup2"></div>
+              <div class="columndown2"></div>
+              <p>TUE</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup3"></div>
+              <div class="columndown3"></div>
+              <p>WED</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup4"></div>
+              <div class="columndown4"></div>
+              <p>THU</p>
+            </div>
+            <div class="col-5 col-sm-2">
+              <div class="columnup5"></div>
+              <div class="columndown5"></div>
+              <p>FRI</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="/HTML/AEB32-tttduc/bootstrap-5.2.3-dist/umd/popper.min.js"></script>
+    <script src="/HTML/AEB32-tttduc/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
