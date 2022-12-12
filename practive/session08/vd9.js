@@ -4,6 +4,7 @@ while (n < 2) {
 }
 let dem;
 let h=0;
+let g=n;
 for (var i = 2; i <= n; i++) {
     dem=0;
     while (n % i === 0) {
@@ -17,6 +18,10 @@ for (var i = 2; i <= n; i++) {
                 console.log("*");
             }
     } 
-    h+=dem;
+}
+for (var j = 1; j <= g; j++) {
+    if (g % j == 0) {
+       h++;
+    }
 }
 console.log(h);
