@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="/HTML/AEB32-tttduc/JS/alert.js"></script>
+  </head>
+  <body>
+    <div class="col-md-6">
+        <label for="inputcity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputcity" />
+    </div>
+    <div class="col-12">
+        <button onclick="handleSignin()">Sign in</button>
+
+        </button>
+    </div>
+    <div id="div_res"></div>
+    <button  id="btn_delete" onclick="handleOnClick()" ondblclick="handledbOnClick()">Delete</button>
+  </body>
+  <script>
+    function handleOnClick() {
+        let elm = document.getElementById('btn_delete')
+        /* elm.innerHTML = '<span>Delete thành công</span>' */
+        console.log(elm);
+    }
+    function handledbOnClick(){
+        console.log('gi cung duoc');
+    }
+    function handleSignin() {
+        let elmInput = document.getElementById('inputcity')
+        elmInput.value = 'Da Nang'
+        console.log(elmInputCity.value);    
+    }
+  </script>
+</html>
