@@ -1,16 +1,12 @@
-
-let n = prompt('Nhap so phan tu mang: ')
-console.log(n);
-
-let input = prompt('Nhap tung phan tu: ')
-input.split(' ');
-console.log(input); 
-
-let output = 
-function check(input) {
-        for (let j = input.length - 1; j >=0; j--){
-            
-        }
+let n = prompt('Nhap n')
+function checkDoiXung(ar) {
+    let first = 0;
+    let last = ar.length - 1;
+    for ( ;first < last; first++, last--) {
+        if(ar[first] !== ar[last]){
+            return false;
+        }  
+        return true;
     }
-let res = check();
-console.log(res);
+}
+alert(checkDoiXung(prompt('Nhap ')))
