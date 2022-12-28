@@ -6,12 +6,12 @@
 .d_flex {
   display: flex;
 }
-.h100{
-    height: 100%;
+.h100 {
+  height: 100%;
 }
-.w100{
-    width: 100%;
+.w100 {
+  width: 100%;
 }
-.bd_r{
+.bd_r {
   border-right: 1px solid white;
 }

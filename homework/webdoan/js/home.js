@@ -1,9 +1,9 @@
-const LIST_USER = "https://63a06c2124d74f9fe837cb19.mockapi.io/api/v1/picture"
+const LIST_USER = "https://63a06c2124d74f9fe837cb19.mockapi.io/api/v1/picture";
 
 getListCard();
-function _renderUI(card){
-let elm = document.getElementById("div_card")
-/* let listCard = [
+function _renderUI(card) {
+  let elm = document.getElementById("div_card");
+  /* let listCard = [
     {
         "name": "Astra",
         "avatar": "https://images7.alphacoders.com/113/thumb-1920-1134343.png",
@@ -107,35 +107,45 @@ let elm = document.getElementById("div_card")
 
 ]; */
 
-function formatCard(card) {
+  function formatRow(user) {
+    return `
+      <td>
+        <button class="btn btn-success" onclick="goToDetail(${user.id})">Detail</button>
+      </td>
+    `;
+  }
+  function formatCard(card) {
     return `
   <div onclick="handleClickRow(${card.id})" class="card" style="width: 250px;">
   <img src="${card.avatar}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title" style="text-align: center;">${card.name}</h5>
   </div>
-</div> `
-}
-let temp = "";
-for (let index = 0; index < card.length; index++) {
+</div> `;
+  }
+  let temp = "";
+  for (let index = 0; index < card.length; index++) {
     temp += formatCard(card[index]);
-    
-}
-elm.innerHTML = temp;
+  }
+  elm.innerHTML = temp;
 }
 function handleClickRow(cardId) {
-    console.log("handleClickRow", cardId);
-    window.location.href = `./list.html?"id"${cardId}`;
+  console.log("handleClickRow", cardId);
+  window.location.href = `./list.html?"id"${cardId}`;
 }
-function getListCard(){
-    fetch(LIST_USER,{
-        method: "GET",
-    })
+function getListCard() {
+  fetch(LIST_USER, {
+    method: "GET",
+  })
     .then((response) => response.json())
     .then((data) => {
-        _renderUI(data);
-})
-.catch((error) => {
-    console.log("Error:",error);
-});
+      _renderUI(data);
+    })
+    .catch((error) => {
+      console.log("Error:", error);
+    });
+}
+function goToDetail(cardId) {
+  console.log("goToDetail", cardId);
+  window.location.href = `./form.html?id=${cardId}`;
 }

@@ -1,1 +1,1 @@
-alert( "Successful ticket purchase!");
+alert("Successful ticket purchase!");
