@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    height: 200px;
+    border: 1px solid #333;
+    max-width: 500px;
+  }
+  .img img {
+    margin-left: 80px;
+    margin: 10px;
+  }
+  .img{
+    flex:0.45;
+    object-fit: contain;
+    padding: 5px 0px;
+    text-align: center;
+  }
+  .text {    
+   flex:0.55;
+  }
