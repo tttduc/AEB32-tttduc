@@ -107,10 +107,10 @@ function _renderUI(card) {
 
 ]; */
 
-  function formatRow(user) {
+  function formatCard(card) {
     return `
       <td>
-        <button class="btn btn-success" onclick="goToDetail(${user.id})">Detail</button>
+        <button class="btn btn-success" onclick="goToDetail(${card.id})">Detail</button>
       </td>
     `;
   }
@@ -129,10 +129,7 @@ function _renderUI(card) {
   }
   elm.innerHTML = temp;
 }
-function handleClickRow(cardId) {
-  console.log("handleClickRow", cardId);
-  window.location.href = `./list.html?"id"${cardId}`;
-}
+
 function getListCard() {
   fetch(LIST_USER, {
     method: "GET",
@@ -145,6 +142,12 @@ function getListCard() {
       console.log("Error:", error);
     });
 }
+
+function handleClickRow(cardId) {
+  console.log("handleClickRow", cardId);
+  window.location.href = `./list.html?"id"${cardId}`;
+}
+
 function goToDetail(cardId) {
   console.log("goToDetail", cardId);
   window.location.href = `./form.html?id=${cardId}`;
